@@ -1,0 +1,25 @@
+# Modified from Neil's Makefile!!!
+# -Werror
+
+CC := gcc
+CFLAGS := -Wall -Wextra -Wpedantic -Wfloat-equal -Wvla -std=c99
+DEBUG := -g3
+SANI := $(CFLAGS) -fsanitize=address -fsanitize=undefined $(DEBUG)
+VALG := $(CFLAGS) $(DEBUG)
+PRODUCTION= $(CFLAGS) -O3
+
+
+%: %.c 
+		$(CC) $< $(CFLAGS) -O2 -o $@ -lm
+
+%_s: %.c 
+		$(CC) $< $(SANI) -o $@ -lm
+
+# valgrind ./XXX_v
+%_v: %.c 
+		$(CC) $< $(VALG) -o $@ -lm
+
+
+# 'make clean' removes all executables
+clean:
+		rm -f *_s *_v 
