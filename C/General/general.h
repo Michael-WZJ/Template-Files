@@ -3,26 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-// ADTs - Linked List
-typedef char listType;
-
-typedef struct LNode {
-	listType data;
-	struct LNode* next;
-} LNode;
-
-typedef struct linkedList {
-    LNode* start;
-    LNode* end;
-    int size;
-} linkedList;
-
-linkedList* init_list_linked(void);
-void print_list_linked(linkedList* l);
-void free_list_linked(linkedList* l);
-void addToEnd_list_linked(linkedList* l, listType data) ;
-// ADTs - Linked List
-
 
 // Neil
 void on_error(const char* s);
