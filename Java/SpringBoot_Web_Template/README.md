@@ -1,8 +1,9 @@
 # SpringBoot Web Template 
 Java 17 
+
 SpringBoot 3.0.2
 
-<dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
