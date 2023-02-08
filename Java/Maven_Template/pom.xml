@@ -45,6 +45,14 @@
 	  
 	    <!-- maven运行插件，定义入口类 -->
         <!-- Maven exec plugin 定义 mainClass -->
+		<plugin>
+		  <groupId>org.codehaus.mojo</groupId>
+		  <artifactId>exec-maven-plugin</artifactId>
+		  <version>3.0.0</version>
+		  <configuration>
+			<mainClass>org.example.App</mainClass>
+		  </configuration>
+		</plugin>
         <!--
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
