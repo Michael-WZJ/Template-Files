@@ -1,2 +1,2 @@
-# Template-Files
-Standard Template Files for Various Languages
+# Maven Template
+java 1.8
