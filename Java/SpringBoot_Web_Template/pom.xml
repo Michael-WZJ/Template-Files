@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>springbootWeb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>springbootWeb</name>
 	<description>Demo project for Spring Boot Web 3.0.2</description>
 
 	<properties>
